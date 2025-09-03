@@ -21,7 +21,10 @@
     <developers>
         <developer/>
     </developers>
-<!--    <modules>-->
+    <modules>
+        <module>spring-boot-week1</module>
+    </modules>
+    <!--    <modules>-->
 <!--        <module>spring-boot-week1</module>-->
 <!--    </modules>-->
     <scm>
