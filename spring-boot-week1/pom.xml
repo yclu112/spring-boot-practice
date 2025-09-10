@@ -4,12 +4,21 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>top.yclu</groupId>
-        <artifactId>spring-boot-practice</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>3.3.3</version>
+        <relativePath/> <!-- 添加这行 -->
     </parent>
 
-    <artifactId>spring-boot-week1</artifactId>
+    <!-- 修正 groupId 为你的包名 -->
+    <groupId>top.yclu</groupId>
+    <artifactId>spring-boot-practice</artifactId>
+    <version>1.0-SNAPSHOT</version>
+    <!-- 修改 packaging 为 jar -->
+    <packaging>jar</packaging>
+
+    <name>spring-boot-practice</name>
+    <description>Spring Boot Practice</description>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -17,4 +26,52 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+            <dependency>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-starter-web</artifactId>
+            </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-logging</artifactId>
+        </dependency>
+            <!-- 容联云短信 SDK -->
+            <dependency>
+                <groupId>com.cloopen</groupId>
+                <artifactId>java-sms-sdk</artifactId>
+                <version>1.0.4</version>
+            </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <scope>provided</scope>
+        </dependency>
+
+    </dependencies>
+
+
+    <!-- 添加 build 配置 -->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <configuration>
+                    <!-- 指定主类 -->
+                    <mainClass>top.yclu.week1.QuickstartApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 </project>

@@ -1,0 +1,28 @@
+server:
+  port: 8888
+#  servlet:
+#    contextPath: /yclu
+spring:
+  application:
+    name: week1
+
+
+my:
+  mood:
+    today: 周五
+    content: 期待周末
+    author: "小程序员"
+  feature:
+    helloSwitch: false
+    closeMsg: "该接口正在维护，10分钟后再来吧!"
+
+
+yclu:
+  sms:
+    ccp:
+      serverIp: app.cloopen.com
+      port: 8883
+      accountSId: 2c94811c9860a9c4019917bea4d91e0a
+      accountToken: 87e4a8a5514b42628bca19488c562742
+      appId: 2c94811c9860a9c4019917bea63e1e11
+      templateId: 1
