@@ -34,3 +34,4 @@ spring:
 custom:
   qrcode:
     content: "https://www.baidu.com"
+

@@ -28,9 +28,9 @@ class MailServiceTest {
     void sendHtmlMail() {
         Mail mail=new Mail();
 
-        mail.setTo("3271745754@qq.com");
+        mail.setTo("1527095504@qq.com");
         mail.setSubject("测试邮件");
-        mail.setContent("<html><body><h1>cc测试</h1></body></html>");
+        mail.setContent("<html><body><h1 color:blue>测试文本内容</h1></body></html>");
         mailService.sendHTMLMail(mail);
     }
 
